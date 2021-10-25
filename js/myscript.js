@@ -17,7 +17,12 @@ for (let i = 1; i <= 100; i++){
     square.append(i);
     containerSquare.append(square);
 
-    if (i % 3 === 0) {
+     if ((i % 3 === 0) && (i % 5 === 0)) {
+
+        square.classList.add("quadratiFizzBuzz");
+        square.append(`FizzBuzz`);
+
+    } else if (i % 3 === 0) {
 
         square.classList.add("quadratiFizz");
         square.append(`Fizz`);
@@ -26,11 +31,6 @@ for (let i = 1; i <= 100; i++){
 
         square.classList.add("quadratiBuzz");
         square.append(`Buzz`);
-
-    } else if ((i % 3 === 0) && (i % 5 === 0)) {
-
-        square.classList.add("quadratiFizzBuzz");
-        square.append(`FizzBuzz`);
 
     }
 
