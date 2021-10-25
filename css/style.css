@@ -1,0 +1,43 @@
+body {
+    background-color: #083B4C;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    font-size: 60px;
+}
+
+#containerQuadrati {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.quadrati {
+    height: 120px;
+    width: calc(100% / 7 - 10px);
+    margin-bottom: 10px;
+    background-color: #1389B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadratiFizz {
+    background-color: #0BD6A1;
+}
+
+.quadratiBuzz {
+    background-color: #FFD166;
+}
+
+.quadratiFizzBuzz {
+    background-color: #F0466F;
+}
